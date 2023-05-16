@@ -1,3 +1,5 @@
+'use strict';
+
 const cart = [
     { item: 'Bread', price: 3.29, quantity: 2 },
     { item: 'Milk', price: 4.09, quantity: 1 },
