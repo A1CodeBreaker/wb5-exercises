@@ -1,0 +1,7 @@
+.roundedImg {
+    border-radius: 20px;
+  }
+  
+  .rotated {
+    transform: rotate(5deg);
+  }
