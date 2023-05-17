@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="imageGroup.css" />
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+      </nav>
+      <h1>Images</h1>
+    </header>
+    <main>
+      <div class="imageGroup">
+        <img
+          class="scenery"
+          src="./images/deep_blue_1.png"
+          alt="deep blue scenery"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          vel sapiente delectus at recusandae quae nisi hic commodi! Voluptatem
+          ad cumque cum repellat sint aspernatur magni nulla eaque minima
+          aperiam.
+        </p>
+      </div>
+      <div class="imageGroup">
+        <img
+          src="./images/birding_loop_1.png"
+          alt="birding loop"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          vel sapiente delectus at recusandae quae nisi hic commodi! Voluptatem
+          ad cumque cum repellat sint aspernatur magni nulla eaque minima
+          aperiam.
+        </p>
+      </div>
+      <div class="imageGroup">
+        <img class="scenery" src="./images/deep_blue_1.png" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          vel sapiente delectus at recusandae quae nisi hic commodi! Voluptatem
+          ad cumque cum repellat sint aspernatur magni nulla eaque minima
+          aperiam.
+        </p>
+      </div>
+      <div class="imageGroup">
+        <img src="./images/birding_loop_1.png" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          vel sapiente delectus at recusandae quae nisi hic commodi! Voluptatem
+          ad cumque cum repellat sint aspernatur magni nulla eaque minima
+          aperiam.
+        </p>
+      </div>
+    </main>
+    <script>
+      window.onload = () => {
+        const imageGroupArray = Array.from(
+          document.getElementsByClassName("imageGroup")
+        );
+        imageGroupArray.forEach(
+          (element) => (element.style.border = "thick solid blue")
+        );
+      };
+
+      const imageNoAlt = Array.from(
+        document.querySelectorAll("img:not([alt])")
+      );
+      imageNoAlt.forEach((imgTag) => (imgTag.alt = "graffiti image"));
+    </script>
+  </body>
+</html>
