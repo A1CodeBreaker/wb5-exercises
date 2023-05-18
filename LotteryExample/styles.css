@@ -1,0 +1,10 @@
+td, th, tr, tbody {
+    border: thin solid black;
+    padding:.4em;
+}
+table{
+    border-collapse: collapse;
+}
+tbody > tr:nth-child(odd) {
+    background-color: rgb(234, 231, 231);
+  }
